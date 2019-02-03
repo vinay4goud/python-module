@@ -1,0 +1,80 @@
+# module
+# Consider a module to be the same as a code library.
+# A file containing a set of functions you want to include in your application.
+
+# Save this code in a file named mymodule.py
+
+def greeting(name):
+  print("Hello, " + name)
+  
+  
+#   Use a Module
+#   Now we can use the module we just created, by using the import statement:
+
+import mymodule
+
+mymodule.greeting("Jonathan")
+
+
+# output 
+
+Hello, Jonathan
+
+
+#  Variables in Module
+
+# The module can contain functions, as already described, but also variables of all types (arrays, dictionaries, objects etc):The module can contain functions, as already described, but also variables of all types (arrays, dictionaries, objects etc):The module can contain functions, as already described, but also variables of all types (arrays, dictionaries, objects etc):
+
+Save this code in the file mymodule.py
+
+person1 = {
+  "name": "John",
+  "age": 36,
+  "country": "Norway"
+}
+
+# Import the module named mymodule, and access the person1 dictionary:
+
+import mymodule
+
+a = mymodule.person1["age"]
+print(a)
+
+# Built-in Modules
+# There are several built-in modules in Python, which you can import whenever you like.
+
+import platform
+
+x = platform.system()
+print(x)
+
+#output
+
+windows 
+
+
+# Import From Module
+# You can choose to import only parts from a module, by using the from keyword.
+
+
+def greeting(name):
+  print("Hello, " + name)
+
+person1 = {
+  "name": "John",
+  "age": 36,
+  "country": "Norway"
+}
+
+# Import only the person1 dictionary from the module:
+
+from mymodule import person1
+
+print (person1["age"])
+
+# Output 
+
+36
+
+
+
